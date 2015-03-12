@@ -44,6 +44,9 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
+    bottom: auto;
+    top: 110px;
+    text-shadow: 0 0 20px #333;
 }
 
 /* Declare heights because of positioning of img element */
@@ -109,10 +112,16 @@ body {
     margin-top: 60px;
     padding: 30px 0;
 }
+.footer-wrapper .social h3 {
+    margin-top: 0;
+}
 .footer-wrapper .footer {
     background-color: #000;
     padding: 30px 0;
     color: #ccc;
+}
+.footer-wrapper .footer i {
+    width: 20px;
 }
 .footer-wrapper .footer a,
 .footer-wrapper .footer a:hover {
