@@ -1,0 +1,107 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block content %}
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{{ asset('bundles/app/images/drops.jpg') }}" alt="Code">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1>Clastic, The CMS aimed at simplicity!</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">Getting started</div>
+                            <div class="panel-body">
+                                <p>
+                                    Download the project to setup your first installation.
+                                </p>
+                                <a class="btn btn-success btn-lg" href="/download">
+                                    <i class="fa fa-download"></i>
+                                    Download !
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container marketing">
+
+    {% for feature in features|slice(0,3) %}
+        <div class="row featurette">
+            <div class="col-md-8 col-md-offset-4">
+                <h2 class="featurette-heading">{{ feature.node.title }}</h2>
+            </div>
+            <div class="col-md-4 icon">
+                <i class="fa fa-{{ feature.icon }} fa-8x fa-fw"></i>
+            </div>
+            <div class="col-md-8">
+                <div class="lead">{{ feature.teaser|raw }}</div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    {% endfor %}
+
+    <div class="row featurette-vertical">
+        {% for feature in features|slice(3) %}
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <h2 class="featurette-heading">{{ feature.node.title }}</h2>
+                    </div>
+                    <div class="col-md-4 icon">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-{{ feature.icon }} fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="lead">{{ feature.teaser|raw }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette-vertical">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-4">
+                    <h2>Getting started</h2>
+                </div>
+                <div class="col-lg-4 icon">
+                    <i class="fa fa-play-circle fa-7x"></i>
+                </div>
+                <div class="col-lg-8">
+                    {{ clastic_block('getting_started') }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-4">
+                    <h2>Documentation</h2>
+                </div>
+                <div class="col-lg-4 icon">
+                    <i class="fa fa-book fa-7x"></i>
+                </div>
+                <div class="col-lg-8">
+                    {{ clastic_block('documentation') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

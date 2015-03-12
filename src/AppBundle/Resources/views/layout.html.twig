@@ -1,0 +1,12 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block content %}
+    <div class="container push">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{% block clastic_front_content_title %}{% endblock %}</h1>
+                {% block clastic_front_content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

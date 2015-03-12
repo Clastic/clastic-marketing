@@ -1,0 +1,11 @@
+_clastic_admin:
+    resource: routing_admin.yml
+    prefix: admin
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+_front:
+    resource: "@ClasticFrontBundle/Resources/config/routing.xml"
+    prefix:   /
