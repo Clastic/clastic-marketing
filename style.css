@@ -41,13 +41,6 @@ body {
     height: 500px;
     margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
-    bottom: auto;
-    top: 110px;
-    text-shadow: 0 0 20px #333;
-}
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -61,8 +54,15 @@ body {
     min-width: 100%;
     height: 500px;
 }
-
-
+.carousel-inner > .item > .container {
+    padding-top: 110px;
+}
+.carousel-inner > .item > .container h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 20px #000;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
