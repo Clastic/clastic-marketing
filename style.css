@@ -94,8 +94,14 @@ body {
 .featurette .icon .fa {
     font-size: 160px;
 }
-.featurette-vertical .icon .fa {
+.featurette-vertical .col-lg-6 .fa {
     font-size: 100px;
+}
+.featurette-vertical .col-lg-4 .fa {
+    font-size: 60px;
+}
+.featurette-vertical .col-lg-4 .lead {
+    font-size: 16px;
 }
 
 /* Thin out the marketing headings */
