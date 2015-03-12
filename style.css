@@ -66,17 +66,24 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 20px;
-    text-align: center;
-}
+.fa-6x { font-size: 6em; }
+.fa-7x { font-size: 7em; }
+.fa-8x { font-size: 8em; }
+.fa-9x { font-size: 9em; }
+
+
 .marketing h2 {
     font-weight: normal;
 }
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+}
 .marketing .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
+    font-size: 1.2em;
+}
+.marketing .col-lg-4 h2 {
+    font-size: 2em;
 }
 
 
@@ -90,18 +97,6 @@ body {
 .featurette .icon,
 .featurette-vertical .icon {
     text-align: center;
-}
-.featurette .icon .fa {
-    font-size: 160px;
-}
-.featurette-vertical .col-lg-6 .fa {
-    font-size: 100px;
-}
-.featurette-vertical .col-lg-4 .fa {
-    font-size: 60px;
-}
-.featurette-vertical .col-lg-4 .lead {
-    font-size: 16px;
 }
 
 /* Thin out the marketing headings */
