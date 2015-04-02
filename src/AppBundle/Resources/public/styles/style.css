@@ -1,185 +1,33 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
-html {
-    position: relative;
-    min-height: 100%;
+.navbar-inverse,
+.landing {
+    background-color: #1E3042;
+    border-color: #1E3042;
 }
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    color: #5a5a5a;
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
 }
-.footer-wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 228px;
-    background-color: #f5f5f5;
+.navbar-nav > li.opt > a {
+    padding: 15px 10px 5px 10px;
 }
-.sf-push {
-    height: 228px;
+.navbar-inverse {
+    padding-top: 10px;
+}
+.navbar-inverse .focus {
+    border-bottom: 4px solid #3498DB;
 }
 
-.container.push {
-    margin-top: 100px;
-    margin-bottom: 300px;
+.btn-warning,
+.navbar-inverse .navbar-nav > li > a.btn-warning:hover {
+    background-color: #E74C3C;
+    border-color: #E74C3C;
 }
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
+.landing {
+    padding: 50px;
 }
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-    padding-right: 0;
-    padding-left: 0;
-}
-.navbar-wrapper .navbar {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-    width: auto;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-    height: 500px;
-    margin-bottom: 60px;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 500px;
-    background-color: #777;
-}
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
-}
-.carousel-inner > .item > .container {
-    padding-top: 200px;
-}
-.carousel-inner > .item > .container h1 {
-    width: 100%;
-    text-align: center;
+.landing .jumbotron {
+    background-color: transparent;
     color: #fff;
-    text-shadow: 0 0 20px #000;
+    padding: 50px;
+    margin: 0;
 }
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-.fa-6x { font-size: 6em; }
-.fa-7x { font-size: 7em; }
-.fa-8x { font-size: 8em; }
-.fa-9x { font-size: 9em; }
-
-
-.marketing h2 {
-    font-weight: normal;
-}
-
-.marketing .col-lg-4 {
-    margin-bottom: 20px;
-}
-.marketing .col-lg-4 p {
-    font-size: 1.2em;
-}
-.marketing .col-lg-4 h2,
-.marketing .col-md-6 h2 {
-    font-size: 2em;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 40px 0; /* Space out the Bootstrap <hr> more */
-}
-
-.featurette .icon,
-.featurette-vertical .icon {
-    text-align: center;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-    text-align: center;
-}
-
-.footer-wrapper .social {
-    background-color: #eee;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    /*margin-top: 60px;*/
-    padding: 30px 0;
-}
-.footer-wrapper .social h3 {
-    margin-top: 0;
-}
-.footer-wrapper .footer {
-    background-color: #000;
-    padding: 30px 0;
-    color: #ccc;
-}
-.footer-wrapper .footer a,
-.footer-wrapper .footer a:hover {
-    color: #ccc;
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-        text-align: left;
-    }
-}
-
