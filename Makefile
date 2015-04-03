@@ -22,3 +22,6 @@ update:
 dev:
 	app/console assets:install --symlink
 	gulp watch & app/console server:run
+
+deploy_production:
+	cd deploy && cap production deploy
