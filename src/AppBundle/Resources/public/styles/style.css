@@ -19,6 +19,9 @@ body {
 .navbar-inverse {
     height: 75px;
 }
+.navbar-inverse > div {
+    background-color: #1E3042;
+}
 .navbar-inverse,
 .landing {
     background-color: #1E3042;
