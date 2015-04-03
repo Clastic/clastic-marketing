@@ -2,107 +2,185 @@
 
 {% block content %}
 
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="{{ asset('bundles/app/images/drops.jpg') }}" alt="Code">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1>Clastic, The CMF aimed at simplicity!</h1>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">Getting started</div>
-                            <div class="panel-body">
-                                <p>
-                                    Download the project to setup your first installation.
-                                </p>
-                                <a class="btn btn-success btn-block" href="/download">
-                                    <i class="fa fa-download"></i>
-                                    Download !
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="landing" id="home">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Clastic</h1>
+                <p class="lead">
+                    The CMF aimed at simplicity!
+                </p>
             </div>
         </div>
     </div>
-</div>
 
+    <div class="divider"></div>
 
-<div class="container marketing">
-
-    {% for feature in features|slice(0,3) %}
-        <div class="row featurette">
-            <div class="col-md-8 col-md-offset-4">
-                <h2 class="featurette-heading">{{ feature.node.title }}</h2>
-            </div>
-            <div class="col-md-4 icon">
-                <i class="fa fa-{{ feature.icon }} fa-8x fa-fw"></i>
-            </div>
-            <div class="col-md-8">
-                <div class="lead">{{ feature.teaser|raw }}</div>
-            </div>
-        </div>
-        <hr class="featurette-divider">
-    {% endfor %}
-
-    <div class="row featurette-vertical">
-        {% for feature in features|slice(3) %}
-            <div class="col-lg-4">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-4">
-                        <h2 class="featurette-heading">{{ feature.node.title }}</h2>
-                    </div>
-                    <div class="col-md-4 icon">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-{{ feature.icon }} fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </div>
-                    <div class="col-md-8">
-                        <p class="lead">{{ feature.teaser|raw }}</p>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette-vertical">
-        <div class="col-md-6">
+    <section class="landing-wide">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-4">
-                    <h2 class="featurette-heading">Getting started</h2>
+                <div class="col-md-4 text-center">
+                <span class="fa-stack fa-5x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                </span>
+                    <h3>Simple</h3>
+                    <p>The backoffice is built with its users in mind. Simple and intuitive administration at its core.</p>
                 </div>
-                <div class="col-lg-4 icon">
-                    <i class="fa fa-play-circle fa-7x"></i>
+                <div class="col-md-4 text-center">
+                <span class="fa-stack fa-5x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-puzzle-piece fa-stack-1x fa-inverse"></i>
+                </span>
+                    <h3>Modular</h3>
+                    <p>Built as separate components every module can be turned on and off independent from each other.
+                        This makes the interface less bloated and without distractions.</p>
                 </div>
-                <div class="col-lg-8">
-                    {{ clastic_block('getting_started') }}
+                <div class="col-md-4 text-center">
+                <span class="fa-stack fa-5x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+                </span>
+                    <h3>Open-source</h3>
+                    <p>Built on top of strong and battle tested open-source projects.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-4">
-                    <h2 class="featurette-heading">Documentation</h2>
-                </div>
-                <div class="col-lg-4 icon">
-                    <i class="fa fa-book fa-7x"></i>
-                </div>
-                <div class="col-lg-8">
-                    {{ clastic_block('documentation') }}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sf-push"></div>
-</div>
+    </section>
 
+    <section class="landing-text">
+        <a id="about"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="block">
+                        <h2>About</h2>
+                        {{ clastic_block('about') }}
+                    </div>
+                </div>
+                <div class="col-md-7 features">
+                    <h2>Administration</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Multi user</h3>
+                            <p>You can create several administrators, editors, users for your site.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Mobile friendly</h3>
+                            <p>Developed as an open-source project, everyone can file issues or request changes.
+                                Developers can build their own modules to extend the functionality even further.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Secure</h3>
+                            <p>Built to protect your project and your identity.
+                                Multiple actions are taken to make Clastic a safe base to build your application.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-wide">
+        <a id="framework"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 features">
+                    <h2>Development</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Fast & scalable</h3>
+                            <p>Aimed at any type of application, Clastic is built to comply with industry standards
+                                for performance and scalability.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Extend</h3>
+                            <p>Developed as an open-source project, everyone can file issues or request changes.
+                                Developers can build their own modules to extend the functionality even further.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Rapid development</h3>
+                            <p>Combining symfony's tools together with clastic will make for a very short
+                                development process to get your application running in no time.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="block">
+                        <h2>Framework</h2>
+                        {{ clastic_block('framework') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-text">
+        <a id="demo"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="block">
+                        <h2>Demo</h2>
+                        {{ clastic_block('demo') }}
+                    </div>
+                </div>
+                <div class="col-md-7 features">
+                    <h2>The next step</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-play-circle fa-stack-2x"></i>
+                        </span>
+                            <h3>Getting strated</h3>
+                            <p>To get going with Clastic. Check out
+                                <a href="http://clastic.readthedocs.org/en/latest/overview/">these instructions</a>.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Documentation</h3>
+                            <p>Clastic has community driven documentation. Changes to the
+                                <a href="http://clastic.readthedocs.org/en/latest/">documentation</a> can be requested
+                                via Pull Requests or Issues.</p>
+                        </li>
+                        <li>
+                        <span class="fa-fw fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <h3>Support</h3>
+                            <p>Support can be found in the <a href="https://github.com/Clastic/Clastic/issues">GitHub issue queue</a>.
+                                If you would like to interact with someone, join us on <a href="https://clastic.slack.com/">Slack</a>.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

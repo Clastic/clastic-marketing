@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="{{ asset('bundles/app/styles/style.css') }}" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-main">
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDHH8P"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -31,94 +32,61 @@
     })(window,document,'script','dataLayer','GTM-PDHH8P');</script>
 <!-- End Google Tag Manager -->
 
-<div class="navbar-wrapper">
-    <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/"><img height="24" width="24" src="//blog.nousefreak.be/bundles/clasticbackoffice/logo.png" alt=""/></a>
-                    <a class="navbar-brand" href="/"> Clastic</a>
-                </div>
-            </div>
-        </nav>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" id="navbar-main">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img height="24" width="24" src="//blog.nousefreak.be/bundles/clasticbackoffice/logo.png" alt=""/></a>
+            <a class="navbar-brand" href="/"> Clastic</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="opt active"><a href="#home">Home</a></li>
+            <li class="opt"><a href="#about">About</a></li>
+            <li class="opt"><a href="#framework">Framework</a></li>
+            <li class="opt"><a href="#demo">Demo</a></li>
+            <li class="dl"><a class="btn btn-small btn-warning"
+                              href="http://clastic.readthedocs.org/en/latest/installation/">DOWNLOAD</a></li>
+        </ul>
     </div>
-</div>
+</nav>
 
 {% block content %}
 
 {% endblock %}
 
-<footer class="footer-wrapper">
-    <div class="social">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Social</h3>
-                    {{ clastic_block('social') }}
-                </div>
-                <div class="col-md-6">
-                    <h3>Update</h3>
-                    {{ clastic_block('update') }}
-                </div>
-            </div>
-        </div>
+<section class="landing-wide link">
+    <div class="container">
+        <ul class="row list-inline">
+            <li class="col-md-2 col-md-offset-1">
+                <a href="https://github.com/Clastic/Clastic/issues"><i class="fa-fw fa fa-ticket"></i> Issues</a>
+            </li>
+            <li class="col-md-2">
+                <a href="http://clastic.readthedocs.org/"><i class="fa-fw fa fa-book"></i> Documentation</a>
+            </li>
+            <li class="col-md-2">
+                <a href="http://blog.nousefreak.be/"><i class="fa-fw fa fa-user"></i> Author</a>
+            </li>
+            <li class="col-md-2">
+                <a href="https://twitter.com/clasticphp"><i class="fa-fw fa fa-twitter"></i> Twitter</a>
+            </li>
+            <li class="col-md-2">
+                <a href="https://github.com/Clastic"><i class="fa-fw fa fa-github"></i> Github</a>
+            </li>
+        </ul>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <ul class="fa-ul">
-                                <li>
-                                    <a href="https://github.com/Clastic/Clastic/issues"><i class="fa-li fa fa-ticket"></i> Issues</a>
-                                </li>
-                                <li>
-                                    <a href="http://clastic.readthedocs.org/"><i class="fa-li fa fa-book"></i> Documentation</a>
-                                </li>
-                                <li>
-                                    <a href="http://blog.nousefreak.be/"><i class="fa-li fa fa-user"></i> Author</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="fa-ul">
-                                <li>
-                                    <a href="http://clastic-master.nousefreak.be"><i class="fa-li fa fa-play-circle"></i> Demo</a>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>username: demo</li>
-                                        <li>password: demo</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="fa-ul">
-                                <li>
-                                    <a href="https://twitter.com/clasticphp"><i class="fa-li fa fa-twitter"></i> Twitter</a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Clastic"><i class="fa-li fa fa-github"></i> Github</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:clastic@nousefreak.be"><i class="fa-li fa fa-envelope"></i> E-mail</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2015 Dries De Peuter</p>
-                </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-muted">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>© 2015 Dries De Peuter</p>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,185 +1,177 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-html {
-    position: relative;
-    min-height: 100%;
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
 }
+
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    color: #5a5a5a;
-}
-.footer-wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 228px;
-    background-color: #f5f5f5;
-}
-.sf-push {
-    height: 228px;
+    margin: 0;
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Open Sans,Geneva,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #414141;
+    background-color: #ECF0F1;
 }
 
-.container.push {
-    margin-top: 100px;
-    margin-bottom: 300px;
+/**
+ * Navbar
+ */
+.navbar-inverse,
+.landing {
+    background-color: #1E3042;
+    border-color: #1E3042;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+}
+.navbar-nav > li.opt > a {
+    padding: 15px 10px 5px 10px;
+}
+.navbar-nav > li.dl {
+    margin-left: 10px;
+}
+.navbar-inverse {
+    padding-top: 10px;
+}
+.navbar-inverse .active {
+    border-bottom: 4px solid #3498DB;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
+.btn-warning,
+.navbar-inverse .navbar-nav > li > a.btn-warning,
+.navbar-inverse .navbar-nav > li > a.btn-warning:hover {
+    background-color: #E74C3C;
+    border-color: #E74C3C;
+    padding: 10px;
+    margin: 8px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 12px;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-    padding-right: 0;
-    padding-left: 0;
+/**
+ * Landing
+ */
+.landing {
+    padding: 50px;
 }
-.navbar-wrapper .navbar {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-    width: auto;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-    height: 500px;
-    margin-bottom: 60px;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 500px;
-    background-color: #777;
-}
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
-}
-.carousel-inner > .item > .container {
-    padding-top: 200px;
-}
-.carousel-inner > .item > .container h1 {
-    width: 100%;
-    text-align: center;
+.landing .jumbotron {
+    background-color: transparent;
     color: #fff;
-    text-shadow: 0 0 20px #000;
+    padding: 50px;
+    margin: 0;
 }
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-.fa-6x { font-size: 6em; }
-.fa-7x { font-size: 7em; }
-.fa-8x { font-size: 8em; }
-.fa-9x { font-size: 9em; }
-
-
-.marketing h2 {
-    font-weight: normal;
+.landing .jumbotron h1 {
+    text-align: left;
+    margin-top: 80px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
 }
 
-.marketing .col-lg-4 {
-    margin-bottom: 20px;
+/**
+ * Divoder
+ */
+.divider {
+    height: 5px;
+    margin-bottom: 40px;
+    line-height: 0;
+    background-color: #3498DB;
 }
-.marketing .col-lg-4 p {
-    font-size: 1.2em;
+
+/**
+ * Landing text
+ */
+.landing-text,
+.landing-wide {
+    margin: 0;
+    padding: 80px 0;
 }
-.marketing .col-lg-4 h2,
-.marketing .col-md-6 h2 {
-    font-size: 2em;
+.landing-text {
+    background: #FFF none repeat scroll 0 0;
 }
 
 
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 40px 0; /* Space out the Bootstrap <hr> more */
+/**
+ * text 
+ */
+.block {
+    background-color: #1E3042;
+    padding: 30px;
+    color: #fff;
+}
+.block h2 {
+    margin: 0 0 30px 0;
+}
+.block a,
+.block a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
-.featurette .icon,
-.featurette-vertical .icon {
-    text-align: center;
+.features ul {
+    padding-left: 80px;
+}
+.features ul li {
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 90px;
+}
+.features ul li .fa-fw {
+    position: absolute;
+    left: -70px;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-    text-align: center;
+/**
+ *
+ */
+.update {
+    background-color: #ECF0F1;
+    padding: 30px;
+    color: #000;
 }
-
-.footer-wrapper .social {
-    background-color: #eee;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    /*margin-top: 60px;*/
-    padding: 30px 0;
-}
-.footer-wrapper .social h3 {
+.update h2 {
     margin-top: 0;
 }
-.footer-wrapper .footer {
-    background-color: #000;
-    padding: 30px 0;
-    color: #ccc;
+
+/**
+ * Footer
+ */
+.footer {
+    background-color: #1E3042;
+    padding: 30px;
+    color: #fff;
 }
-.footer-wrapper .footer a,
-.footer-wrapper .footer a:hover {
-    color: #ccc;
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-        text-align: left;
-    }
+.footer a,
+.footer a:hover {
+    color: #fff;
 }
 
+.landing-wide.link {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.landing-wide.link a,
+.landing-wide.link a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.landing-wide,
+.landing-text {
+    position: relative;
+}
+.landing-wide > a,
+.landing-text > a {
+    position: absolute;
+    top: -60px;
+    z-index: 1000;
+    height: 1px;
+    width: 1px;
+    display: block;
+}
