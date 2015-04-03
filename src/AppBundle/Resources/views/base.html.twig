@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="{{ asset('bundles/app/styles/style.css') }}" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-main">
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDHH8P"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -32,28 +33,58 @@
 <!-- End Google Tag Manager -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container" id="navbar-main">
         <div class="navbar-header">
             <a class="navbar-brand" href="/"><img height="24" width="24" src="//blog.nousefreak.be/bundles/clasticbackoffice/logo.png" alt=""/></a>
             <a class="navbar-brand" href="/"> Clastic</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li class="opt"><a href="../navbar/">Home</a></li>
-            <li class="opt focus"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li class="opt"><a href="../navbar-fixed-top/">Fixed top</a></li>
-            <li><a class="btn btn-small btn-warning" href="../navbar-fixed-top/">Download</a></li>
+            <li class="opt active"><a href="#home">Home</a></li>
+            <li class="opt"><a href="#about">About</a></li>
+            <li class="opt"><a href="#framework">Framework</a></li>
+            <li class="opt"><a href="#demo">Demo</a></li>
+            <li class="dl"><a class="btn btn-small btn-warning"
+                              href="http://clastic.readthedocs.org/en/latest/installation/">DOWNLOAD</a></li>
         </ul>
     </div>
 </nav>
-<div class="landing">
-    <div class="jumbotron">
-        <h1>Clastic</h1>
-        <p class="lead">
-            The CMF aimed at simplicity!
-        </p>
-    </div>
-</div>
 
+{% block content %}
+
+{% endblock %}
+
+<section class="landing-wide link">
+    <div class="container">
+        <ul class="row list-inline">
+            <li class="col-md-2 col-md-offset-1">
+                <a href="https://github.com/Clastic/Clastic/issues"><i class="fa-fw fa fa-ticket"></i> Issues</a>
+            </li>
+            <li class="col-md-2">
+                <a href="http://clastic.readthedocs.org/"><i class="fa-fw fa fa-book"></i> Documentation</a>
+            </li>
+            <li class="col-md-2">
+                <a href="http://blog.nousefreak.be/"><i class="fa-fw fa fa-user"></i> Author</a>
+            </li>
+            <li class="col-md-2">
+                <a href="https://twitter.com/clasticphp"><i class="fa-fw fa fa-twitter"></i> Twitter</a>
+            </li>
+            <li class="col-md-2">
+                <a href="https://github.com/Clastic"><i class="fa-fw fa fa-github"></i> Github</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-muted">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>© 2015 Dries De Peuter</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

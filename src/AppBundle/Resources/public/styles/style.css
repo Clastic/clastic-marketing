@@ -1,4 +1,21 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
 
+body {
+    margin: 0;
+    font-family: HelveticaNeue,Helvetica Neue,Helvetica,Open Sans,Geneva,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #414141;
+    background-color: #ECF0F1;
+}
+
+/**
+ * Navbar
+ */
 .navbar-inverse,
 .landing {
     background-color: #1E3042;
@@ -10,18 +27,36 @@
 .navbar-nav > li.opt > a {
     padding: 15px 10px 5px 10px;
 }
+.navbar-nav > li.dl {
+    margin-left: 10px;
+}
 .navbar-inverse {
     padding-top: 10px;
 }
-.navbar-inverse .focus {
+.navbar-inverse .active {
     border-bottom: 4px solid #3498DB;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
 }
 
 .btn-warning,
+.navbar-inverse .navbar-nav > li > a.btn-warning,
 .navbar-inverse .navbar-nav > li > a.btn-warning:hover {
     background-color: #E74C3C;
     border-color: #E74C3C;
+    padding: 10px;
+    margin: 8px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 12px;
 }
+
+/**
+ * Landing
+ */
 .landing {
     padding: 50px;
 }
@@ -30,4 +65,113 @@
     color: #fff;
     padding: 50px;
     margin: 0;
+}
+.landing .jumbotron h1 {
+    text-align: left;
+    margin-top: 80px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+/**
+ * Divoder
+ */
+.divider {
+    height: 5px;
+    margin-bottom: 40px;
+    line-height: 0;
+    background-color: #3498DB;
+}
+
+/**
+ * Landing text
+ */
+.landing-text,
+.landing-wide {
+    margin: 0;
+    padding: 80px 0;
+}
+.landing-text {
+    background: #FFF none repeat scroll 0 0;
+}
+
+
+/**
+ * text 
+ */
+.block {
+    background-color: #1E3042;
+    padding: 30px;
+    color: #fff;
+}
+.block h2 {
+    margin: 0 0 30px 0;
+}
+.block a,
+.block a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.features ul {
+    padding-left: 80px;
+}
+.features ul li {
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 90px;
+}
+.features ul li .fa-fw {
+    position: absolute;
+    left: -70px;
+}
+
+/**
+ *
+ */
+.update {
+    background-color: #ECF0F1;
+    padding: 30px;
+    color: #000;
+}
+.update h2 {
+    margin-top: 0;
+}
+
+/**
+ * Footer
+ */
+.footer {
+    background-color: #1E3042;
+    padding: 30px;
+    color: #fff;
+}
+.footer a,
+.footer a:hover {
+    color: #fff;
+}
+
+.landing-wide.link {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.landing-wide.link a,
+.landing-wide.link a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.landing-wide,
+.landing-text {
+    position: relative;
+}
+.landing-wide > a,
+.landing-text > a {
+    position: absolute;
+    top: -60px;
+    z-index: 1000;
+    height: 1px;
+    width: 1px;
+    display: block;
 }
