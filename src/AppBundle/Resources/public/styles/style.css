@@ -133,6 +133,30 @@ body {
     left: -70px;
 }
 
+@keyframes refslide {
+    0%   {top: 0;}
+    90%  {top: -200%;}
+    100% {top: 0;}
+}
+
+.references .media-left a {
+    height: 200px;
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.references .media-left img {
+    max-width: 200px;
+    position: absolute;
+}
+.references .media-left img:hover {
+    animation-name: refslide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /**
  *
  */

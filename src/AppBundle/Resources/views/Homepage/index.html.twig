@@ -89,10 +89,23 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 
     <section class="landing-wide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="{{ asset('images/clastic-dashboard.png') }}" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="{{ asset('images/clastic-form.png') }}" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-text">
         <a id="framework"></a>
         <div class="container">
             <div class="row">
@@ -138,7 +151,7 @@
         </div>
     </section>
 
-    <section class="landing-text">
+    <section class="landing-wide">
         <a id="demo"></a>
         <div class="container">
             <div class="row">
@@ -179,6 +192,44 @@
                                 If you would like to interact with someone, join us on <a href="https://clastic.slack.com/">Slack</a>.</p>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-text">
+        <a id="references"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7">
+                    <div class="block">
+                        <h2>References</h2>
+                        {{ clastic_block('references') }}
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-pull-5 references">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="http://blog.nousefreak.be/">
+                                <img class="media-object" src="{{ asset('images/ref-nousefreak.png') }}"/>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">NoUseFreak Blog</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="http://kotfocus.be/">
+                                <img class="img-responsive media-object" src="{{ asset('images/ref-kotfocus.png') }}"/>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Kotfocus</h4>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
