@@ -135,7 +135,8 @@ body {
 
 @keyframes refslide {
     0%   {top: 0;}
-    90%  {top: -200%;}
+    70%  {top: -200%;}
+    80%  {top: 0;}
     100% {top: 0;}
 }
 
