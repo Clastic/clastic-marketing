@@ -1,3 +1,5 @@
 $('.nav a').on('click', function(){
-    $(".navbar-toggle").click();
+    if ($(window).width() <= 767) {
+        $(".navbar-toggle").click();
+    }
 });
