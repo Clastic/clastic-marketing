@@ -65,6 +65,10 @@ body {
  */
 .landing {
     padding: 50px;
+    overflow: hidden;
+}
+.landing .container {
+    position: relative;
 }
 .landing .jumbotron {
     background-color: transparent;
@@ -72,12 +76,27 @@ body {
     padding: 50px;
     margin: 0;
 }
+@media (max-width: 768px) {
+
+    .landing {
+        padding: 10px;
+    }
+    .landing .jumbotron {
+        padding: 0;
+    }
+}
 .landing .jumbotron h1 {
     text-align: left;
     margin-top: 80px;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: -0.05em;
+}
+.landing .container img {
+    position: absolute;
+    right: 0;
+    height: 400px;
+    bottom: -130px;
 }
 
 /**
@@ -88,6 +107,7 @@ body {
     margin-bottom: 40px;
     line-height: 0;
     background-color: #3498DB;
+    z-index: 20;
 }
 
 /**
