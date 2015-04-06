@@ -62,7 +62,10 @@ a {
     font-weight: bold;
     font-size: 12px;
 }
-
+a.navbar-brand,
+a.navbar-brand:active {
+    outline: 0;
+}
 /**
  * Landing
  */
