@@ -13,6 +13,9 @@ body {
     background-color: #ECF0F1;
 }
 
+a {
+    transition: 0.3s;
+}
 /**
  * Navbar
  */
@@ -76,6 +79,35 @@ body {
     padding: 50px;
     margin: 0;
 }
+section a {
+    position: relative;
+}
+section a:hover {
+    text-decoration: none;
+}
+section a:before {
+    content: "";
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 1px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #23527C;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+}
+section a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
 @media (max-width: 768px) {
 
     .landing {
