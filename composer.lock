@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd409a35a053a3879a21a4909c41afe5",
+    "hash": "f21c6cfff46da46ca2f12e0393736a51",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -52,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/AliasBundle.git",
-                "reference": "7cc8221a74ee567d4d064ecf9cdc0f86b205a438"
+                "reference": "03e64e7b8deed87195753f833a935d04982904a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/AliasBundle/zipball/7cc8221a74ee567d4d064ecf9cdc0f86b205a438",
-                "reference": "7cc8221a74ee567d4d064ecf9cdc0f86b205a438",
+                "url": "https://api.github.com/repos/Clastic/AliasBundle/zipball/03e64e7b8deed87195753f833a935d04982904a1",
+                "reference": "03e64e7b8deed87195753f833a935d04982904a1",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 }
             ],
             "description": "Clastic Alias bundle",
-            "time": "2015-03-24 19:39:37"
+            "time": "2015-04-05 23:55:31"
         },
         {
             "name": "clastic/backoffice-bundle",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/BackofficeBundle.git",
-                "reference": "6b45126a9af06cc4aa9403c159ddc6d67b3bc7f8"
+                "reference": "952650b9f9ba10e2a2363d21d7b988d849d4d8d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/BackofficeBundle/zipball/6b45126a9af06cc4aa9403c159ddc6d67b3bc7f8",
-                "reference": "6b45126a9af06cc4aa9403c159ddc6d67b3bc7f8",
+                "url": "https://api.github.com/repos/Clastic/BackofficeBundle/zipball/952650b9f9ba10e2a2363d21d7b988d849d4d8d1",
+                "reference": "952650b9f9ba10e2a2363d21d7b988d849d4d8d1",
                 "shasum": ""
             },
             "require": {
@@ -129,7 +129,7 @@
                 }
             ],
             "description": "Clastic Backoffice bundle",
-            "time": "2015-03-30 21:15:56"
+            "time": "2015-04-06 11:34:45"
         },
         {
             "name": "clastic/block-bundle",
@@ -137,12 +137,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/BlockBundle.git",
-                "reference": "7fb6d797b8b77d8b077e41713b2506e06f49745c"
+                "reference": "8d325bf04156fe58ee677b79aa8afcc41f25dadc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/BlockBundle/zipball/7fb6d797b8b77d8b077e41713b2506e06f49745c",
-                "reference": "7fb6d797b8b77d8b077e41713b2506e06f49745c",
+                "url": "https://api.github.com/repos/Clastic/BlockBundle/zipball/8d325bf04156fe58ee677b79aa8afcc41f25dadc",
+                "reference": "8d325bf04156fe58ee677b79aa8afcc41f25dadc",
                 "shasum": ""
             },
             "require": {
@@ -166,7 +166,7 @@
                 }
             ],
             "description": "Clastic Block functionality",
-            "time": "2015-03-24 19:39:37"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/blog-bundle",
@@ -174,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/BlogBundle.git",
-                "reference": "751e5eafce1bf590b07f9dd1753375dbbdbf9231"
+                "reference": "66b59922ab132be02d40b70d4f2e0fb09435543c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/BlogBundle/zipball/751e5eafce1bf590b07f9dd1753375dbbdbf9231",
-                "reference": "751e5eafce1bf590b07f9dd1753375dbbdbf9231",
+                "url": "https://api.github.com/repos/Clastic/BlogBundle/zipball/66b59922ab132be02d40b70d4f2e0fb09435543c",
+                "reference": "66b59922ab132be02d40b70d4f2e0fb09435543c",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
                 }
             ],
             "description": "Clastic Blog bundle",
-            "time": "2015-03-24 19:39:37"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/core-bundle",
@@ -217,12 +217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/CoreBundle.git",
-                "reference": "d09d45a95f4e4478d526ede590b5eb56b7b92998"
+                "reference": "100eba2917b5b606931daa493e3e6c8785315425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/CoreBundle/zipball/d09d45a95f4e4478d526ede590b5eb56b7b92998",
-                "reference": "d09d45a95f4e4478d526ede590b5eb56b7b92998",
+                "url": "https://api.github.com/repos/Clastic/CoreBundle/zipball/100eba2917b5b606931daa493e3e6c8785315425",
+                "reference": "100eba2917b5b606931daa493e3e6c8785315425",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
                 }
             ],
             "description": "Clastic Core functionality",
-            "time": "2015-03-24 19:39:37"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/front-bundle",
@@ -257,12 +257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/FrontBundle.git",
-                "reference": "e408d2ef8072445352e79c58bddc0ad92be52ba2"
+                "reference": "2b79da8534b48ac21cd00fc88d685db75c9ca192"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/FrontBundle/zipball/e408d2ef8072445352e79c58bddc0ad92be52ba2",
-                "reference": "e408d2ef8072445352e79c58bddc0ad92be52ba2",
+                "url": "https://api.github.com/repos/Clastic/FrontBundle/zipball/2b79da8534b48ac21cd00fc88d685db75c9ca192",
+                "reference": "2b79da8534b48ac21cd00fc88d685db75c9ca192",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
                 }
             ],
             "description": "Clastic Front bundle",
-            "time": "2015-03-14 01:04:20"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/media-bundle",
@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/MediaBundle.git",
-                "reference": "14f2b8da3eb4fbe9eafb501d4fdf3b09da16a7eb"
+                "reference": "a50b7f2fd5a892e566ae321f795fc19e9b335e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/MediaBundle/zipball/14f2b8da3eb4fbe9eafb501d4fdf3b09da16a7eb",
-                "reference": "14f2b8da3eb4fbe9eafb501d4fdf3b09da16a7eb",
+                "url": "https://api.github.com/repos/Clastic/MediaBundle/zipball/a50b7f2fd5a892e566ae321f795fc19e9b335e27",
+                "reference": "a50b7f2fd5a892e566ae321f795fc19e9b335e27",
                 "shasum": ""
             },
             "require": {
@@ -324,7 +324,7 @@
                 }
             ],
             "description": "Clastic Media functionality",
-            "time": "2015-04-01 18:32:18"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/menu-bundle",
@@ -332,12 +332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/MenuBundle.git",
-                "reference": "22da338fa27a05bf36dc5ce8e5a5c0407888ec39"
+                "reference": "2d1bc27a66cd4788516fd33d9463998d3782a597"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/MenuBundle/zipball/22da338fa27a05bf36dc5ce8e5a5c0407888ec39",
-                "reference": "22da338fa27a05bf36dc5ce8e5a5c0407888ec39",
+                "url": "https://api.github.com/repos/Clastic/MenuBundle/zipball/2d1bc27a66cd4788516fd33d9463998d3782a597",
+                "reference": "2d1bc27a66cd4788516fd33d9463998d3782a597",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
                 }
             ],
             "description": "Clastic Menu functionality",
-            "time": "2015-04-01 18:42:31"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/node-bundle",
@@ -371,12 +371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/NodeBundle.git",
-                "reference": "dc42ec28f1ac4c8d1c12266aef3ae16684800e20"
+                "reference": "9dd79a30bedf6aee137de1ad1df61a2c862ea35b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/NodeBundle/zipball/dc42ec28f1ac4c8d1c12266aef3ae16684800e20",
-                "reference": "dc42ec28f1ac4c8d1c12266aef3ae16684800e20",
+                "url": "https://api.github.com/repos/Clastic/NodeBundle/zipball/9dd79a30bedf6aee137de1ad1df61a2c862ea35b",
+                "reference": "9dd79a30bedf6aee137de1ad1df61a2c862ea35b",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
                 }
             ],
             "description": "Clastic Node bundle",
-            "time": "2015-03-24 19:39:37"
+            "time": "2015-04-06 11:34:45"
         },
         {
             "name": "clastic/security-bundle",
@@ -409,12 +409,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/SecurityBundle.git",
-                "reference": "46cf8c444bd739cad6f0af6991a4c81de78898ce"
+                "reference": "c626f6b39cd1fd6d0aad10c757b0fb49bd674c94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/SecurityBundle/zipball/46cf8c444bd739cad6f0af6991a4c81de78898ce",
-                "reference": "46cf8c444bd739cad6f0af6991a4c81de78898ce",
+                "url": "https://api.github.com/repos/Clastic/SecurityBundle/zipball/c626f6b39cd1fd6d0aad10c757b0fb49bd674c94",
+                "reference": "c626f6b39cd1fd6d0aad10c757b0fb49bd674c94",
                 "shasum": ""
             },
             "require": {
@@ -439,7 +439,7 @@
                 }
             ],
             "description": "Clastic Security bundle",
-            "time": "2015-03-30 11:43:59"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/taxonomy-bundle",
@@ -447,12 +447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/TaxonomyBundle.git",
-                "reference": "8348a12401a3076dd11f258e60bba5f37e86705a"
+                "reference": "e79cf7c9ef8bf401ac4e95d7338e0cea7882998b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/TaxonomyBundle/zipball/8348a12401a3076dd11f258e60bba5f37e86705a",
-                "reference": "8348a12401a3076dd11f258e60bba5f37e86705a",
+                "url": "https://api.github.com/repos/Clastic/TaxonomyBundle/zipball/e79cf7c9ef8bf401ac4e95d7338e0cea7882998b",
+                "reference": "e79cf7c9ef8bf401ac4e95d7338e0cea7882998b",
                 "shasum": ""
             },
             "require": {
@@ -482,7 +482,7 @@
                 }
             ],
             "description": "Clastic Taxonomy bundle",
-            "time": "2015-04-01 18:42:41"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/text-bundle",
@@ -490,12 +490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/TextBundle.git",
-                "reference": "53f3e92f1f83619c30568bd1a92bc42c8dfd304c"
+                "reference": "a7169e0ba06226371cfc96e704025c9ec4164e85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/TextBundle/zipball/53f3e92f1f83619c30568bd1a92bc42c8dfd304c",
-                "reference": "53f3e92f1f83619c30568bd1a92bc42c8dfd304c",
+                "url": "https://api.github.com/repos/Clastic/TextBundle/zipball/a7169e0ba06226371cfc96e704025c9ec4164e85",
+                "reference": "a7169e0ba06226371cfc96e704025c9ec4164e85",
                 "shasum": ""
             },
             "require": {
@@ -524,7 +524,7 @@
                 }
             ],
             "description": "Clastic Text bundle",
-            "time": "2015-03-24 13:00:12"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "clastic/user-bundle",
@@ -532,12 +532,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/UserBundle.git",
-                "reference": "d6f7b8f7e70b0e363041fb8a2ce48735440571b4"
+                "reference": "4f1ac59362052c671666953111ab48d91cd7a5c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/UserBundle/zipball/d6f7b8f7e70b0e363041fb8a2ce48735440571b4",
-                "reference": "d6f7b8f7e70b0e363041fb8a2ce48735440571b4",
+                "url": "https://api.github.com/repos/Clastic/UserBundle/zipball/4f1ac59362052c671666953111ab48d91cd7a5c0",
+                "reference": "4f1ac59362052c671666953111ab48d91cd7a5c0",
                 "shasum": ""
             },
             "require": {
@@ -564,7 +564,7 @@
                 }
             ],
             "description": "Clastic User bundle",
-            "time": "2015-03-27 19:10:09"
+            "time": "2015-04-04 15:50:11"
         },
         {
             "name": "components/elfinder",
@@ -951,16 +951,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.4.2",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b"
+                "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
-                "reference": "5db6ab40e4c531f14dad4ca96a394dfce5d4255b",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/cd8daf2501e10c63dced7b8b9b905844316ae9d3",
+                "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3",
                 "shasum": ""
             },
             "require": {
@@ -977,7 +977,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -991,17 +991,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -1010,10 +999,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Common Library for Doctrine projects",
@@ -1025,7 +1020,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2014-05-21 19:28:51"
+            "time": "2015-04-02 19:55:44"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -1444,6 +1439,60 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+            "name": "doctrine/instantiator",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f976e5de371104877ebc89bd8fecb0019ed9c119",
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3,<8.0-DEV"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.0.*@ALPHA"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Instantiator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com/"
+                }
+            ],
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://github.com/doctrine/instantiator",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "time": "2014-10-13 12:58:55"
+        },
+        {
             "name": "doctrine/lexer",
             "version": "v1.0.1",
             "source": {
@@ -1499,26 +1548,30 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.7",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68"
+                "reference": "aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68",
-                "reference": "2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe",
+                "reference": "aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "~1.1",
-                "doctrine/dbal": "~2.4",
+                "doctrine/cache": "~1.4",
+                "doctrine/collections": "~1.2",
+                "doctrine/common": ">=2.5-dev,<2.6-dev",
+                "doctrine/dbal": ">=2.5-dev,<2.6-dev",
+                "doctrine/instantiator": "~1.0.1",
                 "ext-pdo": "*",
-                "php": ">=5.3.2",
-                "symfony/console": "~2.0"
+                "php": ">=5.4",
+                "symfony/console": "~2.5"
             },
             "require-dev": {
+                "phpunit/phpunit": "~4.0",
                 "satooshi/php-coveralls": "dev-master",
                 "symfony/yaml": "~2.1"
             },
@@ -1532,7 +1585,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -1568,7 +1621,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-12-16 13:45:01"
+            "time": "2015-04-02 20:40:18"
         },
         {
             "name": "egeloen/ordered-form",
@@ -1863,16 +1916,16 @@
         },
         {
             "name": "helios-ag/fm-elfinder-bundle",
-            "version": "5.0.2",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helios-ag/FMElfinderBundle.git",
-                "reference": "1a50fd2bd8437da9a9e4c47b1a1fde062e999398"
+                "reference": "97b5da53ee1723648e8f5905ce2e83d27d776297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helios-ag/FMElfinderBundle/zipball/1a50fd2bd8437da9a9e4c47b1a1fde062e999398",
-                "reference": "1a50fd2bd8437da9a9e4c47b1a1fde062e999398",
+                "url": "https://api.github.com/repos/helios-ag/FMElfinderBundle/zipball/97b5da53ee1723648e8f5905ce2e83d27d776297",
+                "reference": "97b5da53ee1723648e8f5905ce2e83d27d776297",
                 "shasum": ""
             },
             "require": {
@@ -1919,7 +1972,7 @@
                 "elfinder",
                 "file manager"
             ],
-            "time": "2015-04-02 10:07:54"
+            "time": "2015-04-03 14:41:07"
         },
         {
             "name": "helios-ag/fm-elfinder-php-connector",
@@ -2497,17 +2550,17 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "1c3ed356bd1ff67cd71806efbb71511644035c85"
+                "reference": "5c37623576ea9e841b87dc0d85414d98fa6f7abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/1c3ed356bd1ff67cd71806efbb71511644035c85",
-                "reference": "1c3ed356bd1ff67cd71806efbb71511644035c85",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/5c37623576ea9e841b87dc0d85414d98fa6f7abb",
+                "reference": "5c37623576ea9e841b87dc0d85414d98fa6f7abb",
                 "shasum": ""
             },
             "require": {
@@ -2548,7 +2601,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2015-03-24 15:12:07"
+            "time": "2015-04-02 12:28:58"
         },
         {
             "name": "sensiolabs/security-checker",
