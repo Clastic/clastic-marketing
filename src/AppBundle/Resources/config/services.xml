@@ -1,19 +1,16 @@
-<?xml version="1.0" ?>
-
-<container xmlns="http://symfony.com/schema/dic/services"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+<?xml version="1.0"?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
         <parameter key="app.feature.module.class">AppBundle\Module\FeatureModule</parameter>
         <parameter key="app.feature.module.form_build.class">AppBundle\Form\Module\FeatureFormExtension</parameter>
-    </parameters>
+    <parameter key="app_bundle.reference.module.class">AppBundle\Module\ReferenceModule</parameter><parameter key="app_bundle.reference.module.form_extension.class">AppBundle\Form\Module\ReferenceFormExtension</parameter></parameters>
 
     <services>
         <service id="app.feature.module" class="%app.feature.module.class%">
-            <tag name="clastic.module" node_module="true" alias="feature" />
-            <tag name="clastic.node_form" build_service="app.feature.module.form_build" />
+            <tag name="clastic.module" node_module="true" alias="feature"/>
+            <tag name="clastic.node_form" build_service="app.feature.module.form_build"/>
         </service>
-        <service id="app.feature.module.form_build" class="%app.feature.module.form_build.class%" />
-    </services>
+        <service id="app.feature.module.form_build" class="%app.feature.module.form_build.class%"/>
+    <service id="app_bundle.reference.module" class="%app_bundle.reference.module.class%"><tag name="clastic.module" node_module="true" alias="reference"/><tag name="clastic.node_form" build_service="app_bundle.reference.module.form_extension"/></service><service id="app_bundle.reference.module.form_extension" class="%app_bundle.reference.module.form_extension.class%"/></services>
 </container>

@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 features">
-                    <h2>Administration</h2>
+                    <h2 class="sr-only">Administration</h2>
                     <ul class="list-unstyled">
                         <li>
                             <span class="fa-fw fa-stack fa-2x">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-md-pull-5 features">
-                    <h2>Development</h2>
+                    <h2 class="sr-only">Development</h2>
                     <ul class="list-unstyled">
                         <li>
                             <span class="fa-fw fa-stack fa-2x">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 features">
-                    <h2>The next step</h2>
+                    <h2 class="sr-only">The next step</h2>
                     <ul class="list-unstyled">
                         <li>
                             <span class="fa-fw fa-stack fa-2x">
@@ -203,28 +203,19 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-md-pull-5 references">
-                    <div class="media">
-                        <div class="media-left media-middle">
-                            <a href="http://blog.nousefreak.be/">
-                                <img class="media-object" src="{{ asset('images/ref-nousefreak.png') }}"/>
-                            </a>
+                    {% for reference in references %}
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="{{ reference.link }}">
+                                    <img class="media-object" src="{{ asset(reference.screenshot) }}"/>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ reference.node.title }}</h4>
+                                <p></p>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">NoUseFreak Blog</h4>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left media-middle">
-                            <a href="http://kotfocus.be/">
-                                <img class="img-responsive media-object" src="{{ asset('images/ref-kotfocus.png') }}"/>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Kotfocus</h4>
-                            <p></p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

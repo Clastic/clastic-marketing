@@ -17,8 +17,12 @@ class HomepageController extends Controller
                 'weight' => 'ASC',
             ));
 
+        $references = $this->getDoctrine()->getRepository('AppBundle:Reference')
+            ->findBy(array(), array(), 2);
+
         return $this->render('AppBundle:Homepage:index.html.twig', array(
             'features' => $features,
+            'references' => $references,
         ));
     }
 }
