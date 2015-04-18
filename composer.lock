@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic-Contrib/GoogleAnalyticsBundle.git",
-                "reference": "1e23ae528efc70c4991bf6d2d0691c1cadb66370"
+                "reference": "4c0dd6244e33e058d99f37a52c185780bae32981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic-Contrib/GoogleAnalyticsBundle/zipball/1e23ae528efc70c4991bf6d2d0691c1cadb66370",
-                "reference": "1e23ae528efc70c4991bf6d2d0691c1cadb66370",
+                "url": "https://api.github.com/repos/Clastic-Contrib/GoogleAnalyticsBundle/zipball/4c0dd6244e33e058d99f37a52c185780bae32981",
+                "reference": "4c0dd6244e33e058d99f37a52c185780bae32981",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +323,7 @@
                 }
             ],
             "description": "Clastic Google Analytics bundle",
-            "time": "2015-04-17 19:07:20"
+            "time": "2015-04-18 22:42:41"
         },
         {
             "name": "clastic/media-bundle",
