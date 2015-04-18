@@ -39,6 +39,7 @@ class AppKernel extends Kernel
             new Clastic\BlockBundle\ClasticBlockBundle(),
             new Clastic\FrontBundle\ClasticFrontBundle(),
             new Clastic\SecurityBundle\ClasticSecurityBundle(),
+            new Clastic\GoogleAnalyticsBundle\ClasticGoogleAnalyticsBundle(),
 
             // Your project
             new AppBundle\AppBundle(),

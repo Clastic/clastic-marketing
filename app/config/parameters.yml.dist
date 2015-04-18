@@ -20,3 +20,5 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     clastic_site_name: Clastic Marketing
+    clastic_google_analytics_client_id: ~
+    clastic_google_analytics_profile_id: ~

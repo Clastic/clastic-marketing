@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "75dded22bb67e8d6e85e28d0aeaa2a9a",
+    "hash": "17c428e54e2fe07d2bc68438bc531579",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clastic/BackofficeBundle.git",
-                "reference": "b2b3ac90f399e2559f33ebb3187f59ac5fab36fa"
+                "reference": "c76c4d4459a6b449442cb7e8cc0f3146edfd4f67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clastic/BackofficeBundle/zipball/b2b3ac90f399e2559f33ebb3187f59ac5fab36fa",
-                "reference": "b2b3ac90f399e2559f33ebb3187f59ac5fab36fa",
+                "url": "https://api.github.com/repos/Clastic/BackofficeBundle/zipball/c76c4d4459a6b449442cb7e8cc0f3146edfd4f67",
+                "reference": "c76c4d4459a6b449442cb7e8cc0f3146edfd4f67",
                 "shasum": ""
             },
             "require": {
@@ -129,7 +129,7 @@
                 }
             ],
             "description": "Clastic Backoffice bundle",
-            "time": "2015-04-15 21:31:17"
+            "time": "2015-04-17 18:10:23"
         },
         {
             "name": "clastic/block-bundle",
@@ -287,6 +287,43 @@
             ],
             "description": "Clastic Front bundle",
             "time": "2015-04-04 15:50:11"
+        },
+        {
+            "name": "clastic/google-analytics-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Clastic-Contrib/GoogleAnalyticsBundle.git",
+                "reference": "1e23ae528efc70c4991bf6d2d0691c1cadb66370"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Clastic-Contrib/GoogleAnalyticsBundle/zipball/1e23ae528efc70c4991bf6d2d0691c1cadb66370",
+                "reference": "1e23ae528efc70c4991bf6d2d0691c1cadb66370",
+                "shasum": ""
+            },
+            "require": {
+                "clastic/backoffice-bundle": "*",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clastic\\GoogleAnalyticsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries De Peuter",
+                    "email": "dries@nousefreak.be"
+                }
+            ],
+            "description": "Clastic Google Analytics bundle",
+            "time": "2015-04-17 19:07:20"
         },
         {
             "name": "clastic/media-bundle",
@@ -3567,6 +3604,7 @@
         "clastic/block-bundle": 20,
         "clastic/security-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
+        "clastic/google-analytics-bundle": 20,
         "clastic/generator-bundle": 20
     },
     "prefer-stable": false,
