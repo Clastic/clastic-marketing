@@ -83,3 +83,6 @@ stof_doctrine_extensions:
 clastic_google_analytics:
     client_id: %clastic_google_analytics_client_id%
     profile_id: %clastic_google_analytics_profile_id%
+
+cl_slack:
+    api_token: %slack_api_token%

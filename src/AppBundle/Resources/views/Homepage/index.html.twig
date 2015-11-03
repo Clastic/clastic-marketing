@@ -10,11 +10,17 @@
                     The CMF aimed at simplicity!
                 </p>
             </div>
-            <img class="hidden-xs" src="{{ asset('images/logo3-big-white.png') }}" alt=""/>
+            <img class="hidden-xs" src="{{ asset('images/logo3-big-white.png') }}" alt="Clastic background logo"/>
         </div>
     </div>
 
     <div class="divider"></div>
+
+    <div class="container">
+        <div class="row">
+            {% include 'ClasticBackofficeBundle:FlashMessage:render.html.twig' %}
+        </div>
+    </div>
 
     <section class="landing-wide">
         <div class="container">
@@ -95,12 +101,12 @@
             <div class="row">
                 <div class="col-sm-6">
                     <p>
-                        <img class="img-responsive img-thumbnail" src="{{ asset('images/clastic-dashboard.png') }}" alt=""/>
+                        <img class="img-responsive img-thumbnail" src="{{ asset('images/clastic-dashboard.png') }}" alt="Clastic dashboard"/>
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p>
-                        <img class="img-responsive img-thumbnail" src="{{ asset('images/clastic-form.png') }}" alt=""/>
+                        <img class="img-responsive img-thumbnail" src="{{ asset('images/clastic-form.png') }}" alt="Clastic edit form"/>
                     </p>
                 </div>
             </div>
@@ -158,6 +164,7 @@
                     <div class="block">
                         <h2>Demo</h2>
                         {{ clastic_block('demo') }}
+                        <a href="http://clastic-master.nousefreak.be/admin/" class="btn btn-block btn-primary" target="_blank">Demo installation</a>
                     </div>
                 </div>
                 <div class="col-md-7 features">
@@ -207,7 +214,7 @@
                         <div class="media">
                             <div class="media-left media-middle">
                                 <a href="{{ reference.link }}">
-                                    <img class="media-object" src="{{ asset(reference.screenshot) }}"/>
+                                    <img class="media-object" src="{{ asset(reference.screenshot) }}" alt="{{ reference.node.title }} reference"/>
                                 </a>
                             </div>
                             <div class="media-body">
@@ -216,6 +223,55 @@
                             </div>
                         </div>
                     {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-wide">
+        <a id="community"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="block">
+                        <h2>Community</h2>
+                        {{ clastic_block('community_slack')|replace({'%user_count%': slackUserCount})|raw }}
+                        {{ form_start(slackForm) }}
+                            <div class="form-group">
+                                {{ form_label(slackForm.email) }}
+                                {{ form_widget(slackForm.email) }}
+                            </div>
+                            {{ form_widget(slackForm.submit) }}
+                        {{ form_end(slackForm) }}
+                    </div>
+                </div>
+                <div class="col-md-7 features">
+                    <h2 class="sr-only">The next step</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span class="fa-fw fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h3>{{ features[12].node.title|default('') }}</h3>
+                            {{ features[12].teaser|default('')|raw }}
+                        </li>
+                        <li>
+                            <span class="fa-fw fa-stack fa-2x">
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            </span>
+                            <h3>{{ features[13].node.title|default('') }}</h3>
+                            {{ features[13].teaser|default('')|raw }}
+                        </li>
+                        <li>
+                            <span class="fa-fw fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h3>{{ features[14].node.title|default('') }}</h3>
+                            {{ features[14].teaser|default('')|raw }}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

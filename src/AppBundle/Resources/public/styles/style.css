@@ -51,7 +51,7 @@ a {
     background-color: transparent;
 }
 
-.btn-warning,
+.navbar-inverse .btn-warning,
 .navbar-inverse .navbar-nav > li > a.btn-warning,
 .navbar-inverse .navbar-nav > li > a.btn-warning:hover {
     background-color: #E74C3C;
@@ -135,7 +135,7 @@ section a:hover:before {
 }
 
 /**
- * Divoder
+ * Divider
  */
 .divider {
     height: 5px;
@@ -163,8 +163,9 @@ section a:hover:before {
  */
 .block {
     background-color: #1E3042;
-    padding: 30px;
     color: #fff;
+    min-height: 350px;
+    padding: 30px;
 }
 .block h2 {
     margin: 0 0 30px 0;
@@ -220,6 +221,12 @@ section a:hover:before {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+}
+
+.btn-block {
+    font-weight: bold;
+    text-decoration: none !important;
+    text-transform: uppercase;
 }
 
 /**

@@ -41,6 +41,8 @@ class AppKernel extends Kernel
             new Clastic\SecurityBundle\ClasticSecurityBundle(),
             new Clastic\GoogleAnalyticsBundle\ClasticGoogleAnalyticsBundle(),
 
+            new CL\Bundle\SlackBundle\CLSlackBundle(),
+
             // Your project
             new AppBundle\AppBundle(),
         );
