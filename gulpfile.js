@@ -9,7 +9,7 @@ var concat = require('gulp-concat'),
     filesize = require('gulp-filesize'),
     rename = require('gulp-rename'),
     less = require('gulp-less'),
-    clean = require('gulp-clean'),
+    del = require('del'),
     livereload = require('gulp-livereload'),
     notify = require("gulp-notify"),
     clasticNamespace = require('./vendor/clastic/core-bundle/Resources/scripts/Clastic.js');
@@ -49,9 +49,10 @@ var errorHandler = notify.onError(function (err) {
 
 gulp.task('default', ['clean', 'build', 'watch']);
 
-gulp.task('clean', function () {
-    return gulp.src('build', {read: false})
-        .pipe(clean());
+gulp.task('clean', function (cb) {
+    del([
+        paths.build + '/**'
+    ], cb);
 });
 
 gulp.task('build', ['scripts', 'styles']);
@@ -73,8 +74,8 @@ gulp.task('scripts', ['scripts:vendor', 'scripts:app']);
 gulp.task('scripts:vendor', function() {
     gulp.src(paths.scripts.vendor)
         .pipe(concat('vendor.js'))
-        //.pipe(stripDebug())
-        //.pipe(uglify())
+        .pipe(stripDebug())
+        .pipe(uglify())
         .pipe(rename('vendor.min.js'))
         .pipe(gulp.dest(paths.build))
         .pipe(filesize());
@@ -83,7 +84,7 @@ gulp.task('scripts:vendor', function() {
 gulp.task('scripts:app', function() {
     gulp.src(paths.scripts.app)
         .pipe(concat('app.js'))
-        //.pipe(stripDebug())
+        .pipe(stripDebug())
         .pipe(uglify())
         .on('error', errorHandler)
         .pipe(rename('app.min.js'))
@@ -99,7 +100,7 @@ gulp.task('styles:app', function() {
         .pipe(less())
         .on('error', errorHandler)
         .pipe(concat('app.css'))
-        .pipe(autoprefix('last 2 versions'))
+        .pipe(autoprefix('last 1 versions'))
         .pipe(minifyCSS({
             keepSpecialComments: 0
         }))
